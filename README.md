@@ -1,6 +1,7 @@
 # WhisperMom
-## HealthHackGT'21 Whisper Mom !
+## HealthHackGT'21 [Whisper Mom !](https://whisper-mom.herokuapp.com/)
 An app to Help new mom know what's up about their pregnancy in Realtime !
+Try our app live [here](https://whisper-mom.herokuapp.com/)
 
 This code is derived from base repository:
 [Base project](https://github.com/mappmechanic/whats-up-realtime-status-update)
