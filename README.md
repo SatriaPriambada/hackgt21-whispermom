@@ -57,11 +57,11 @@ Replace the respective key, secret & appId for pusher initialisation in **server
 6. Now we are ready to run our app using the following node commands
 
 ```
-node server
+yarn start
 ```
 
 7. We will be able to access the app at [http://localhost:9000](http://localhost:9000)
 
-For Any clarifications or questions Tweet to me at 
+Credits for base code goes to  
 [https://twitter.com/mappmechanic](https://twitter.com/mappmechanic)
 
