@@ -2,7 +2,7 @@
 logs
 *.log
 npm-debug.log*
-
+public/assets/.DS_Store
 # Runtime data
 pids
 *.pid
