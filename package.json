@@ -2,7 +2,7 @@
   "name": "whisper-mom",
   "version": "0.0.1",
   "description": "Whisper Mom - Mom sharing story and Status Update Visibility using Pusher Realtime APIs",
-  "main": "server.js",
+  "main": "node server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

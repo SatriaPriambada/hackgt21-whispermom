@@ -83,7 +83,12 @@ app.get('/logout', function(req,res){
 app.use(function(req, res, next) {
     var error404 = new Error('Route Not Found');
     error404.status = 404;
-    next(error404);
+    try{
+
+      next(error404);
+    } catch(e) {
+      console.log("Err ", e)
+    }
 });
 
 module.exports = app;
