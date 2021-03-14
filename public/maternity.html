@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Whisper Mom ! </title>
+          <link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+          <link rel="stylesheet" type="text/css" href="starability-minified/starability-all.min.css">
+          <style>
+          body { background-color:#fafafa; font-family:'Roboto'}
+          .container { margin:50px; max-width:1080px;}
+          form { margin:30px;}
+          </style>
+          <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200">
+          
+          <link rel="stylesheet" href="./style.css">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <script>
+            function changeCounter(event){
+              console.log("changeCounter ", event)
+              var counterId = event.target.id.slice(0, -1);
+              var currCounter = document.getElementById(counterId).innerHTML
+              document.getElementById(counterId).innerHTML = parseInt(currCounter) + 1;
+            }
+          </script>
+        </head>
+<body style="margin: 0px;">
+  <header>
+    <div class="logo">
+        <a href="/"><img src="./assets/whatsup.png"/></a>
+    </div>
+
+    <div class="logo">
+        <a href="/maternity.html"><img src="./assets/maternity.png" /></a>
+    </div>
+    <div class="logo">
+      <a href="/tracker.html"><img src="./assets/babyTracker.png" /></a>
+    </div>
+    <div id="logout" class="logout" style="display: inherit;">
+       <a href="/logout">Logout</a>
+    </div>
+</header>
+<section class="subheader">
+    <img class="whatsup-logo" src="./assets/whisperLogo.png" />
+    <h2>Whisper Mom ! Help new mom know what's up about their pregnancy in Realtime !</h2>
+</section>
+  <div class="container">
+  <h1>Maternity Ward's Rating</h1>
+    <form>
+        <fieldset class="starability-basic" style="width: 800px;">
+          <legend style="font-weight: bold;">Northside Hospital Center for Perinatal Medicine - Midtown</legend>
+  
+          <input type="radio" id="rate5" name="rating" value="5" onclick="changeCounter(event)">
+          <label for="rate5" title="Amazing">5 stars</label>
+  
+          <input type="radio" id="rate4" name="rating" value="4" onclick="changeCounter(event)">
+          <label for="rate4" title="Very good">4 stars</label>
+  
+          <input type="radio" id="rate3" name="rating" value="3" onclick="changeCounter(event)">
+          <label for="rate3" title="Average">3 stars</label>
+  
+          <input type="radio" id="rate2" name="rating" value="2" onclick="changeCounter(event)">
+          <label for="rate2" title="Not good">2 stars</label>
+  
+          <input type="radio" id="rate1" name="rating" value="1" onclick="changeCounter(event)">
+          <label for="rate1" title="Terrible">1 star</label>
+        </fieldset>
+        Rated by <div id="rate" style="display: inline-block;">10</div> mother(s)
+      </form>
+  
+      <form>
+        <fieldset class="starability-slot" style="width: 800px;">
+          <legend style="font-weight: bold;">Northside Baby Delivery</legend>
+  
+          <input type="radio" id="slot-rate5" name="rating" value="5" onclick="changeCounter(event)">
+          <label for="slot-rate5" title="Amazing">5 stars</label>
+  
+          <input type="radio" id="slot-rate4" name="rating" value="4" onclick="changeCounter(event)">
+          <label for="slot-rate4" title="Very good">4 stars</label>
+  
+          <input type="radio" id="slot-rate3" name="rating" value="3" onclick="changeCounter(event)">
+          <label for="slot-rate3" title="Average">3 stars</label>
+  
+          <input type="radio" id="slot-rate2" name="rating" value="2" onclick="changeCounter(event)">
+          <label for="slot-rate2" title="Not good">2 stars</label>
+  
+          <input type="radio" id="slot-rate1" name="rating" value="1" onclick="changeCounter(event)">
+          <label for="slot-rate1" title="Terrible">1 star</label>
+        </fieldset>
+        Rated by <div id="slot-rate" style="display: inline-block;">120</div> mother(s)
+
+      </form>
+  
+      <form>
+        <fieldset class="starability-grow" style="width: 800px;">
+          <legend style="font-weight: bold;">Emory University Hospital Midtown</legend>
+  
+          <input type="radio" id="growing-rate5" name="rating" value="5" onclick="changeCounter(event)">
+          <label for="growing-rate5" title="Amazing">5 stars</label>
+  
+          <input type="radio" id="growing-rate4" name="rating" value="4" onclick="changeCounter(event)">
+          <label for="growing-rate4" title="Very good">4 stars</label>
+  
+          <input type="radio" id="growing-rate3" name="rating" value="3" onclick="changeCounter(event)">
+          <label for="growing-rate3" title="Average">3 stars</label>
+  
+          <input type="radio" id="growing-rate2" name="rating" value="2" onclick="changeCounter(event)">
+          <label for="growing-rate2" title="Not good">2 stars</label>
+  
+          <input type="radio" id="growing-rate1" name="rating" value="1" onclick="changeCounter(event)">
+          <label for="growing-rate1" title="Terrible">1 star</label>
+        </fieldset>
+        Rated by <div id="growing-rate" style="display: inline-block;">25</div> mother(s)
+
+      </form>
+  
+      <form>
+        <fieldset class="starability-growRotate" style="width: 800px;">
+          <legend style="font-weight: bold;">Wellstar Atlanta Medical Center</legend>
+  
+          <input type="radio" id="growing-rotating-rate5" name="rating" value="5" onclick="changeCounter(event)">
+          <label for="growing-rotating-rate5" title="Amazing">5 stars</label>
+  
+          <input type="radio" id="growing-rotating-rate4" name="rating" value="4" onclick="changeCounter(event)">
+          <label for="growing-rotating-rate4" title="Very good">4 stars</label>
+  
+          <input type="radio" id="growing-rotating-rate3" name="rating" value="3" onclick="changeCounter(event)">
+          <label for="growing-rotating-rate3" title="Average">3 stars</label>
+  
+          <input type="radio" id="growing-rotating-rate2" name="rating" value="2" onclick="changeCounter(event)">
+          <label for="growing-rotating-rate2" title="Not good">2 stars</label>
+  
+          <input type="radio" id="growing-rotating-rate1" name="rating" value="1" onclick="changeCounter(event)">
+          <label for="growing-rotating-rate1" title="Terrible">1 star</label>
+        </fieldset>
+        Rated by <div id="growing-rotating-rate" style="display: inline-block;">205</div> mother(s)
+
+      </form>
+  
+      <form>
+        <fieldset class="starability-fade" style="width: 800px;">
+          <legend style="font-weight: bold;">See Baby</legend>
+  
+          <input type="radio" id="fading-rate5" name="rating" value="5" onclick="changeCounter(event)">
+          <label for="fading-rate5" title="Amazing">5 stars</label>
+  
+          <input type="radio" id="fading-rate4" name="rating" value="4" onclick="changeCounter(event)">
+          <label for="fading-rate4" title="Very good">4 stars</label>
+  
+          <input type="radio" id="fading-rate3" name="rating" value="3" onclick="changeCounter(event)">
+          <label for="fading-rate3" title="Average">3 stars</label>
+  
+          <input type="radio" id="fading-rate2" name="rating" value="2" onclick="changeCounter(event)">
+          <label for="fading-rate2" title="Not good">2 stars</label>
+  
+          <input type="radio" id="fading-rate1" name="rating" value="1" onclick="changeCounter(event)">
+          <label for="fading-rate1" title="Terrible">1 star</label>
+        </fieldset>
+        Rated by <div id="fading-rate" style="display: inline-block;">115</div> mother(s)
+
+      </form>
+      <form>
+        <fieldset class="starability-checkmark" style="width: 800px;">
+          <legend style="font-weight: bold;">Dr. Bobbie Bailey Tower Women’s Center & Surgery Center</legend>
+  
+          <input type="radio" id="checkmark-rate5" name="rating" value="5" onclick="changeCounter(event)">
+          <label for="checkmark-rate5" title="Amazing">5 stars</label>
+  
+          <input type="radio" id="checkmark-rate4" name="rating" value="4" onclick="changeCounter(event)">
+          <label for="checkmark-rate4" title="Very good">4 stars</label>
+  
+          <input type="radio" id="checkmark-rate3" name="rating" value="3" onclick="changeCounter(event)">
+          <label for="checkmark-rate3" title="Average">3 stars</label>
+  
+          <input type="radio" id="checkmark-rate2" name="rating" value="2" onclick="changeCounter(event)">
+          <label for="checkmark-rate2" title="Not good">2 stars</label>
+  
+          <input type="radio" id="checkmark-rate1" name="rating" value="1" onclick="changeCounter(event)">
+          <label for="checkmark-rate1" title="Terrible">1 star</label>
+        </fieldset>
+        Rated by <div id="checkmark-rate" style="display: inline-block;">5</div> mother(s)
+      </form>
+      </div>
+</body>
+</html>
