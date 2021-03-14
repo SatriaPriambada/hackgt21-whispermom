@@ -1,6 +1,8 @@
 # WhisperMom
-HealthHackGT'21
-An app that let's you see any User's Status in realtime
+## HealthHackGT'21 Whisper Mom !
+An app to Help new mom know what's up about their pregnancy in Realtime !
+
+This code is derived from base repository:
 [Base project](https://github.com/mappmechanic/whats-up-realtime-status-update)
 [View tutorial](https://pusher.com/tutorials/social-network-javascript/)
 
