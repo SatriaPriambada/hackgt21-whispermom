@@ -1,7 +1,7 @@
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
-var expressSession = require('express-session');
+var session = require('cookie-session');
 var cookieParser = require('cookie-parser');
 
 
@@ -18,10 +18,10 @@ const pusher = new Pusher({
 
 var app = express();
 
-// must use cookieParser before expressSession
+// must use cookieParser before session
 app.use(cookieParser());
 
-app.use(expressSession({secret:'fce43e87f1630c3c9c1d',resave: true, saveUninitialized: true}));
+app.use(session({secret:'fce43e87f1630c3c9c1d',resave: true, saveUninitialized: true}));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
