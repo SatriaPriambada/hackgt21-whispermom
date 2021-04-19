@@ -13,6 +13,7 @@
     "cookie-parser": "^1.4.3",
     "cookie-session": "^1.4.0",
     "express": "^4.14.1",
+    "fhirclient": "^2.3.11",
     "path": "^0.12.7",
     "pusher": "^1.5.1"
   },

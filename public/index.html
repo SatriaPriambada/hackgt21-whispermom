@@ -6,6 +6,24 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200">
         <link rel="stylesheet" href="./style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- FHIR Client JS Library -->
+        <script src='./lib/fhir-client.js'></script>
+
+        <!-- Prevent session bleed caused by single threaded embedded browser and sessionStorage API -->
+        <!-- https://github.com/cerner/fhir-client-cerner-additions -->
+        <script src='./lib/fhir-client-cerner-additions-1.0.0.js'></script>
+        <script>
+            FHIR.oauth2.authorize({
+            'client_id': 'my_web_app',
+            'scope': 'patient/Patient.read patient/Observation.read patient/MedicationRequest.read patient/Observation.write launch online_access openid profile'
+            });
+            FHIR.client({
+                serverUrl: "https://r4.smarthealthit.org",
+                tokenResponse: {
+                    patient: "f2316789-30c4-4c06-9193-0ca5475bbb1b"
+                }   
+            });
+        </script>
     </head>
     <body>
         <header>

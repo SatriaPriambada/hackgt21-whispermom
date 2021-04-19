@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200">
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
+    <script src='./lib/fhir-client.js'></script>
+    <script src='./lib/get-data.js'></script>
 <style>
 body {
   margin: 0;
@@ -152,6 +152,7 @@ input {
   <h2 style="margin:5px">My Pregnant Notes</h2>
   <input type="text" id="myInput" placeholder="New Task or Events..." style="color: black;">
   <span onclick="newElement()" class="addBtn">Add</span>
+  <span onclick="newElement()" class="addBtn">Test</span>
 </div>
 
 <ul id="myUL">
