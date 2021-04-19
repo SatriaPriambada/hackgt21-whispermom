@@ -152,7 +152,6 @@ input {
   <h2 style="margin:5px">My Pregnant Notes</h2>
   <input type="text" id="myInput" placeholder="New Task or Events..." style="color: black;">
   <span onclick="newElement()" class="addBtn">Add</span>
-  <span onclick="newElement()" class="addBtn">Test</span>
 </div>
 
 <ul id="myUL">
@@ -218,6 +217,10 @@ function newElement() {
       var div = this.parentElement;
       div.style.display = "none";
     }
+  }
+  if (document.getElementById('myInput').value.toLowerCase().includes("contraction")){
+    console.log("[Tio] send contraction")
+    addObsContraction()
   }
 }
 </script>

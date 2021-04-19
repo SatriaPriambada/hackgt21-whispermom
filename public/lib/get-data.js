@@ -214,11 +214,8 @@ FHIR.oauth2.ready().then(function(client) {
     })
   });  
 
-  //update function to take in text input from the app and add the note for the latest weight observation annotation
-  //you should include text and the author can be set to anything of your choice. keep in mind that this data will
-  // be posted to a public sandbox
-  function addWeightAnnotation() {
-    var annotation = document.getElementById('annotation').value;
+  function addObsContraction() {
+    var annotation = document.getElementById('myInput').value;
     latestWeightResource.note = [{
       authorString: "spriambada3",
       time: new Date().toISOString(),
@@ -228,9 +225,8 @@ FHIR.oauth2.ready().then(function(client) {
     client.update(latestWeightResource, { signal });
     displayAnnotation(annotation);
   }
-
   //event listner when the add button is clicked to call the function that will add the note to the weight observation
-  document.getElementById('add').addEventListener('click', addWeightAnnotation);
+  document.getElementById('addBtn').addEventListener('click', addObsContraction);
 
 
 }).catch(console.error);
